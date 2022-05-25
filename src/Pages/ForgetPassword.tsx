@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 
 
 
 
-class Login extends React.Component {
+
+
+class ForgetPassword extends React.Component {
     render() {
         return (
         
@@ -18,8 +19,8 @@ class Login extends React.Component {
                 </h1>
 
                 <h2 className='text-black-600 pt-2 text-center font-bold text-2xl'>
-                    Passwort vergessen? <br />
-                    Kein Problem.????
+                Reset Your Password <br />
+                    
                 </h2>
 
                 <div>
@@ -31,7 +32,7 @@ class Login extends React.Component {
       <form className="space-y-6" action="#" method="POST">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email address
+                 Select User Name
                 </label>
                 <div className="mt-1">
                   <input
@@ -50,12 +51,14 @@ class Login extends React.Component {
 
               
 
+              
+
               <div>
                 <button
                   type="submit"
                   className="w-full flex justify-center py-2 px-4 bg-indigo-200  border-2 border-black text-black rounded-md shadow-sm text-sm font-medium  hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                <Link to="/register">Sign in  </Link> 
+                  Request password reset
                 </button>
               </div>
 
@@ -64,8 +67,7 @@ class Login extends React.Component {
                   type="submit"
                   className="w-full flex justify-center py-2 px-4 rounded-md border-2 border-black shadow-sm text-black text-sm font-medium  bg-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                  <Link to="/newuser"> New User?  </Link> 
-                 
+                  Zuruk
                 </button>
               </div>
             </form>
@@ -80,4 +82,5 @@ class Login extends React.Component {
 }
 }
 
-export default Login;
+
+export default ForgetPassword;

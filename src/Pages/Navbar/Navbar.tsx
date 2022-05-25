@@ -12,7 +12,7 @@ export const Navbar = () => {
     <nav className="p-3 w-full items-center bg-black md:flex md:items-center md:justify-between ">
         <div>
             <span className="text-white font[inter] font-bold italic border-2 border-white outline-4 rounded sm:px-4 md:px-3">
-                beeps App
+                beeps.
             </span>
         </div>
 
