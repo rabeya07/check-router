@@ -1,14 +1,14 @@
-import { Routes, Route} from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom';
 import Login from './Pages/Login/Login';
 import Navbar from './Pages/Navbar/Navbar';
 import Register from './Pages/Register';
 import ForgetPassword from './Pages/ForgetPassword';
 import NewUser from './Pages/NewUser';
-import {initializeApp } from 'firebase/app';
-import { config } from './config/config';
 
 
-export const Firebase = initializeApp (config.firebaseConfig);
+
+
+
 
 
 function App(){
