@@ -19,7 +19,17 @@ class NewUser extends React.Component {
                 </h1>
 
                 <h2 className='text-black-600 pt-2 text-center font-bold text-2xl'>
+                     <br />
+                    
+                </h2>
+
+                <h2 className='text-black-600 pt-2 text-center font-bold text-2xl'>
                Create Your Account <br />
+                    
+                </h2>
+
+                <h2 className='text-black-600 pt-2 text-center font-bold text-2xl'>
+                     <br />
                     
                 </h2>
 

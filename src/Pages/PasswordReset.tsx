@@ -1,13 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
-
-
-
-
-
-
-class Register extends React.Component {
+class PasswordReset extends React.Component {
     render() {
         return (
         
@@ -18,9 +13,18 @@ class Register extends React.Component {
                 <h1 className='font-bold text-2xl text-center font-Inter font-extrabold italic text-6xl'>
                    beeps.
                 </h1>
+                <h2 className='text-black-600 pt-2 text-center font-bold text-2xl'>
+                     <br />
+                    
+                </h2>
 
                 <h2 className='text-black-600 pt-2 text-center font-bold text-2xl'>
-                Geben Sie Ihr Passwort ein <br />
+                Enter Your Password <br />
+                    
+                </h2>
+
+                <h2 className='text-black-600 pt-2 text-center font-bold text-2xl'>
+                     <br />
                     
                 </h2>
 
@@ -33,24 +37,24 @@ class Register extends React.Component {
       <form className="space-y-6" action="#" method="POST">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                 User email
+              Organization
                 </label>
                 <div className="mt-1">
                   <input
                     id="email"
-                    name="email"
-                    type="email"
-                    autoComplete="email"
-                    required
+                    name="text"
+                    type="text"
+                    
+                   
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none
-                     focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="you@example.com"
+                     focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
                   />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                  Passwort
+                  Password
                 </label>
                 <div className="mt-1">
                   <input
@@ -58,7 +62,7 @@ class Register extends React.Component {
                     name="password"
                     type="password"
                     autoComplete="password"
-                    required
+                
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none
                      focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="enter password"
                   />
@@ -74,7 +78,8 @@ class Register extends React.Component {
                   type="submit"
                   className="w-full flex justify-center py-2 px-4 bg-indigo-200  border-2 border-black text-black rounded-md shadow-sm text-sm font-medium  hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                  Passwort anfordern
+                  <Link to="/dashboard">Sign In  </Link> 
+                  
                 </button>
               </div>
 
@@ -83,8 +88,9 @@ class Register extends React.Component {
                   type="submit"
                   className="w-full flex justify-center py-2 px-4 rounded-md border-2 border-black shadow-sm text-black text-sm font-medium  bg-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                    Zuruk 
+                  
                  
+                  <Link to="/forgetpassword">Forgot Password  </Link> 
                   
                 </button>
               </div>
@@ -101,4 +107,4 @@ class Register extends React.Component {
 }
 
 
-export default Register;
+export default PasswordReset;
