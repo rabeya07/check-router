@@ -1,9 +1,8 @@
-import React, { useContext, useRef } from 'react';
+
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../../context/AuthContext';
+
 
 import { useForm } from 'react-hook-form';
-import { auth } from './firebaseSetup';
 
 
 
@@ -14,38 +13,8 @@ export default function Login() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = () => console.log();
   console.log(errors);
-  const user = useContext(AuthContext);
-
-  const emailRef = useRef<HTMLInputElement>(null);
-  const passwordRef = useRef<HTMLInputElement>(null);
-
-
   
-  const createAccount = async () => {
-    try {
-      await auth.createUserWithEmailAndPassword(
-        emailRef.current!.value,
-        passwordRef.current!.value
-      );
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const signIn = async () => {
-    try {
-      await auth.signInWithEmailAndPassword(
-        emailRef.current!.value,
-        passwordRef.current!.value
-      );
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const signOut = async () => {
-    await auth.signOut();
-  };
+  
 
 
   return (
