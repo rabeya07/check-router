@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-class PasswordReset extends React.Component {
+class ResetPassword extends React.Component {
     render() {
         return (
         
@@ -10,7 +10,7 @@ class PasswordReset extends React.Component {
             <div className='h-screen flex bg-gray-bg1'>
                 
             <div className='w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16'>
-                <h1 className='font-bold text-2xl text-center font-Inter font-extrabold italic text-6xl'>
+                <h1 className=' text-center font-Inter font-extrabold italic text-6xl'>
                    beeps.
                 </h1>
                 <h2 className='text-black-600 pt-2 text-center font-bold text-2xl'>
@@ -107,4 +107,4 @@ class PasswordReset extends React.Component {
 }
 
 
-export default PasswordReset;
+export default ResetPassword;
